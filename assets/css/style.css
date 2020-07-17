@@ -10,7 +10,8 @@ html, body {
   line-height: 32px;
   text-align: center;
   margin-bottom: 0;
-  color: #000; }
+  color: #000;
+  padding: 0 10px; }
   .heading h3 span {
     color: #00b879; }
 
@@ -2818,6 +2819,7 @@ button.swiper-pagination-bullet {
       position: absolute;
       z-index: 5;
       bottom: -70px;
+      left: 0;
       height: 40px;
       width: 100%;
       margin: 0;
@@ -2867,7 +2869,9 @@ button.swiper-pagination-bullet {
     margin-right: 10px !important; }
   .wr-reasons-row {
     padding-left: 70px;
-    padding-right: 70px; } }
+    padding-right: 70px; }
+  .wr-choice-row_item {
+    max-width: 150px; } }
 
 @media screen and (max-width: 992px) {
   header.sticky .electro-header {
@@ -3051,10 +3055,10 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 770px) {
   .heading h3 {
     font-size: 25px;
-    line-height: 25px; }
+    line-height: 27px; }
   .heading h5 {
     font-size: 14px;
-    line-height: 14px; }
+    line-height: 15px; }
   .electro-header_collapse {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3383,3 +3387,37 @@ button.swiper-pagination-bullet {
         top: 8px;
         left: auto;
         right: -40px; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .wr-choice-row_item .description {
+    width: 150px; }
+  .wr-choice-row_item:hover .icon {
+    width: 98px;
+    height: 98px;
+    -webkit-transform: perspective(5px) translateZ(1px);
+            transform: perspective(5px) translateZ(1px); }
+    .wr-choice-row_item:hover .icon::after {
+      -webkit-transition: 0ms;
+      -o-transition: 0ms;
+      transition: 0ms;
+      top: 0;
+      left: 0;
+      width: 98px;
+      height: 98px;
+      -webkit-transform: perspective(30px) translateZ(10px);
+              transform: perspective(30px) translateZ(10px);
+      opacity: 1; }
+  .wr-choice-row_item .icon::after {
+    -webkit-transition: 0ms;
+    -o-transition: 0ms;
+    transition: 0ms; }
+  .swiper-footer .swiper-button-prev {
+    -webkit-transform: translateY(-32px);
+        -ms-transform: translateY(-32px);
+            transform: translateY(-32px); }
+  .swiper-footer .swiper-button-next {
+    -webkit-transform: translateY(14px);
+        -ms-transform: translateY(14px);
+            transform: translateY(14px); }
+  .ref-review_item-content_text p {
+    width: 550px; } }
