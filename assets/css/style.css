@@ -2874,6 +2874,8 @@ button.swiper-pagination-bullet {
     max-width: 150px; } }
 
 @media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden; }
   header.sticky .electro-header {
     margin-bottom: 0; }
     header.sticky .electro-header_menu a {
