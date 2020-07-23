@@ -1128,16 +1128,21 @@ header.sticky {
           color: #000000; }
           .ref-review_item-content a:hover:after {
             opacity: 1; }
-      .ref-review_item-content_text span {
-        display: inline-block;
-        font-size: 16px;
-        line-height: 16px;
-        font-family: 'Montserrat-700';
-        margin-bottom: 10px; }
-      .ref-review_item-content_text p {
-        font-size: 14px;
-        line-height: 16px;
-        margin-bottom: 0; }
+      .ref-review_item-content_text {
+        max-width: 630px; }
+        .ref-review_item-content_text span {
+          display: inline-block;
+          font-size: 16px;
+          line-height: 16px;
+          font-family: 'Montserrat-700';
+          margin-bottom: 10px; }
+        .ref-review_item-content_text p {
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom: 0; }
+
+.swiper-container {
+  max-width: 630px; }
 
 .swiper-footer {
   position: relative;
@@ -1156,6 +1161,8 @@ header.sticky {
       -webkit-transform: rotate(180deg) translateY(-33px);
           -ms-transform: rotate(180deg) translateY(-33px);
               transform: rotate(180deg) translateY(-33px); }
+    .swiper-footer .swiper-button-prev:focus {
+      outline: 0; }
   .swiper-footer .swiper-button-next {
     position: static; }
     .swiper-footer .swiper-button-next::after {
@@ -1165,6 +1172,8 @@ header.sticky {
       -webkit-transform: translateY(-14px);
           -ms-transform: translateY(-14px);
               transform: translateY(-14px); }
+    .swiper-footer .swiper-button-next:focus {
+      outline: 0; }
   .swiper-footer .swiper-pagination {
     position: static;
     display: -webkit-box;
@@ -2915,7 +2924,13 @@ button.swiper-pagination-bullet {
     padding-left: 70px;
     padding-right: 70px; }
   .wr-choice-row_item {
-    max-width: 150px; } }
+    max-width: 150px; }
+  .swiper-container {
+    max-width: 400px; }
+    .swiper-container .ref-review_item-content_text {
+      max-width: 400px; }
+  .swiper-footer {
+    margin-top: 20px; } }
 
 @media screen and (max-width: 992px) {
   body {
@@ -3096,7 +3111,15 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .ref-review_item-content {
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .ref-review_item-content_text {
+      text-align: center; } }
 
 @media screen and (max-width: 770px) {
   .heading h3 {
@@ -3272,7 +3295,11 @@ button.swiper-pagination-bullet {
         line-height: 14px;
         margin-bottom: 20px; }
       .ref-review_item-content .swiper-footer {
-        margin-top: 30px; } }
+        margin-top: 30px; }
+  .ref-review_item-content_text {
+    max-width: none !important; }
+  .swiper-slide {
+    width: 100% !important; } }
 
 @media screen and (max-width: 576px) {
   .electro-header_collapse__tools-select {
@@ -3413,7 +3440,9 @@ button.swiper-pagination-bullet {
         width: 100%; }
   .ref-review_item-content {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  .swiper-container {
+    max-width: 350px; } }
 
 @media screen and (max-width: 420px) {
   .wr-reasons-row {
@@ -3432,7 +3461,13 @@ button.swiper-pagination-bullet {
       .wr-reasons-row_item .top-el.third {
         top: 8px;
         left: auto;
-        right: -40px; } }
+        right: -40px; }
+  .swiper-container {
+    max-width: 300px; } }
+
+@media screen and (max-width: 350px) {
+  .swiper-container {
+    max-width: 260px; } }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .wr-choice-row_item .description {
